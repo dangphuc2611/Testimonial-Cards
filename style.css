@@ -9,10 +9,12 @@ body {
 #container {
     border: 1px solid black;
     width: 800px;
-    height: 100vh
+    height: 100vh;
+    padding: 20px;
 }
 
 #left-comment {
+    font-size: 20px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -37,8 +39,32 @@ body {
     content: "";
     position: absolute;
     bottom: -20px;
-    left: 20px;
+    left: 40px;
     border-width: 10px;
     border-style: solid;
     border-color: #000 transparent transparent transparent;
+}
+
+.author-section {
+    display: flex;
+    margin-top: 15px;
+}
+
+#right-comment {
+    font-size: 20px;
+    border: #000 solid 1px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    padding-left: auto;
+    padding-right: auto;
+    width: 335px;
+    border-radius: 20px;
+    font-size: auto;
+}
+
+.checked {
+    color: orange;
 }
